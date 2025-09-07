@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PDF_reader"
         mc:Ignorable="d"
-        Title="PDF Reader" Height="800" Width="1000">
+        Title="PDF Reader (MVP) - v0.1.0" Height="800" Width="1000">
     <Window.DataContext>
         <local:MainViewModel/>
     </Window.DataContext>

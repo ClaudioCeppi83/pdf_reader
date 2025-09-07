@@ -3,6 +3,9 @@
 ## Project Overview
 This project is a Minimum Viable Product (MVP) for a basic PDF reader application designed for **Windows** operating systems. The primary goal is to provide essential functionalities for opening and navigating PDF documents, serving as a foundational base for future enhancements.
 
+## Version
+v0.1.0 (Alpha)
+
 ## Features (MVP Scope)
 The current version of the PDF Reader includes the following core functionalities:
 *   **File Opening:** Ability to open PDF files through a file dialog.
