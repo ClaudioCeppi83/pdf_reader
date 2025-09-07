@@ -33,7 +33,7 @@ To build and run this project, you will need:
 ### Installation
 1.  **Clone the repository:**
     ```bash
-    git clone <your-repository-url>
+    git clone https://github.com/ClaudioCeppi83/pdf_reader.git
     cd PDF_reader
     ```
 2.  **Install PdfiumViewer:**
