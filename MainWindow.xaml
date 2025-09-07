@@ -5,18 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PDF_reader"
         mc:Ignorable="d"
-        Title="PDF Reader" Height="600" Width="800">
+        Title="PDF Reader" Height="800" Width="1000">
+    <Window.DataContext>
+        <local:MainViewModel/>
+    </Window.DataContext>
     <DockPanel>
         <ToolBar DockPanel.Dock="Top">
-            <Button Content="Abrir" Click="OpenFile_Click"/>
+            <Button Content="Abrir" Command="{Binding OpenCommand}"/>
             <Separator/>
-            <Button Content="Anterior" Click="PreviousPage_Click"/>
-            <Button Content="Siguiente" Click="NextPage_Click"/>
+            <Button Content="Anterior" Command="{Binding PreviousPageCommand}"/>
+            <Button Content="Siguiente" Command="{Binding NextPageCommand}"/>
             <Separator/>
-            <TextBlock x:Name="PageInfo" VerticalAlignment="Center"/>
+            <TextBlock Text="{Binding PageInfo}" VerticalAlignment="Center"/>
         </ToolBar>
-        <ScrollViewer>
-            <WindowsFormsHost x:Name="WindowsFormsHost"/>
+        <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+            <Image Source="{Binding PdfPageImage}" Stretch="Uniform"/>
         </ScrollViewer>
     </DockPanel>
 </Window>
